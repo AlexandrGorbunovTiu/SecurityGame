@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://chs7po1xwebjq"]
+
+[ext_resource type="Script" uid="uid://c60w5jbbee860" path="res://scenes/ui/SettingsMenu.gd" id="1_gtm51"]
+
+[node name="SettingsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_gtm51")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 275.0
+offset_bottom = 204.0
+color = Color(0.7529412, 0.47058824, 0.36862746, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 7.0
+offset_right = 76.0
+offset_bottom = 124.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="LanguageHBox" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="LanguageLabel" type="Label" parent="CenterContainer/VBoxContainer/LanguageHBox"]
+layout_mode = 2
+
+[node name="LanguageOption" type="OptionButton" parent="CenterContainer/VBoxContainer/LanguageHBox"]
+layout_mode = 2
+
+[node name="SoundHBox" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="SoundLabel" type="Label" parent="CenterContainer/VBoxContainer/SoundHBox"]
+layout_mode = 2
+
+[node name="SoundSlider" type="HSlider" parent="CenterContainer/VBoxContainer/SoundHBox"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+min_value = 1.0
+value = 1.0
+
+[node name="FullscreenHBox" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="FullscreenLabel" type="Label" parent="CenterContainer/VBoxContainer/FullscreenHBox"]
+layout_mode = 2
+
+[node name="FullscreenCheckBox" type="CheckBox" parent="CenterContainer/VBoxContainer/FullscreenHBox"]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2

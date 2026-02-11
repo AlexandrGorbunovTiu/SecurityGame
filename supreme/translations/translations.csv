@@ -1,0 +1,14 @@
+key,en,ru
+menu_play,Play,Играть
+menu_continue,Continue,Продолжить
+menu_new_game,New Game,Новая игра
+menu_settings,Settings,Настройки
+menu_quit,Quit,Выход
+menu_back,Back,Назад
+menu_title,My 2D Game,Моя 2D Игра
+settings_title,Settings,Настройки
+settings_language,Language,Язык
+settings_sound,Sound Volume,Громкость звука
+settings_music,Music Volume,Громкость музыки
+settings_fullscreen,Fullscreen,Полный экран
+settings_resolution,Resolution,Разрешение
